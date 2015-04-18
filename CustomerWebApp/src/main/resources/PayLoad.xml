@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer>
+	<firstname>Prince</firstname>
+	<lastname>Gupta</lastname>
+	<street>Palam Vihar</street>
+	<city>Gurgaon</city>
+	<state>Haryana</state>
+	<zip>122017</zip>
+	<country>India</country>
+</customer>
