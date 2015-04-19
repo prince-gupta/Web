@@ -1,0 +1,53 @@
+.pageHeading {
+	color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	padding: 20px;
+}
+
+.header {
+	height: 100px;
+	background-color: lavender;
+}
+
+.blankSection {
+	height: 10px;
+}
+
+.form {
+	padding: 35px;
+	background: burlywood;
+	height: 40px;
+}
+
+.formElement {
+	float: left;
+	width: 175px;
+	padding-left: 39px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.formButton {
+	float: left;
+	width: 175px;
+	padding-left: 39px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.label {
+	font-weight: bold;
+	font-size: 17px;
+	display: block;
+	text-align: left;
+	padding: 2px;
+}
+
+.spinner {
+	padding-left: 10px;
+	padding-top: 9px;
+}
