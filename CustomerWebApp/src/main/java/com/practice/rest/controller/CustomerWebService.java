@@ -35,11 +35,12 @@ public class CustomerWebService {
 	@Path("/create")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Customer> createCustomerByJSON(Customer customer) {
+	public List<Customer> createCustomerByJSON(Customer customer) throws InterruptedException {
 		Customer new_customer = ormService.save(customer);
 		new_customer.setStatus(CustomerStatus.CREATED);
 		List<Customer> customers = new ArrayList<Customer>();
 		customers.add(new_customer);
+		Thread.sleep(5000);
 		return customers;
 	}
 
@@ -60,12 +61,13 @@ public class CustomerWebService {
 	@POST
 	@Path("/delete")
 	@Consumes(MediaType.APPLICATION_XML)
-	public Customer deleteCustomer(Customer customer) {
+	public Customer deleteCustomer(Customer customer) throws InterruptedException {
 		boolean deleted = ormService.delete(customer);
 		if (deleted)
 			customer.setStatus(CustomerStatus.DELETED);
 		else
 			customer.setStatus(CustomerStatus.NOT_DELETED);
+		Thread.sleep(10000);//Added to see button disabled
 		return customer;
 
 	}
